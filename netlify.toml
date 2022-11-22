@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/"
+  publish = "dist/leonardolima.one/"
   command = "npm run build"
 
 [[redirects]]
