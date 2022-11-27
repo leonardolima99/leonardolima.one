@@ -2,10 +2,11 @@
 
 ### Check list
 
-- [ ] Link direto para section#id não funciona.
-- [ ] Ao rolar a página, não atualiza o realce na navbar.
-- [ ] Tentar ocupar a tela toda no menu mobile. Quando rola rápido o o height não chega ao fundo.
-- [ ] Estilizar .header
+- [ ] - Link direto para section#id não funciona.
+- [ ] - Ao rolar a página, não atualiza o realce na navbar.
+- [ ] - Tentar ocupar a tela toda no menu mobile. Quando rola rápido o height não chega ao fundo.
+- [ ] - Rolagem para navbar, principalmente para o modo paisagem.
+- [ ] - Estilizar .header.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
