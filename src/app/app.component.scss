@@ -38,6 +38,8 @@ a {
   position: sticky;
   top: 0;
 
+  user-select: none;
+
   .wrap {
     display: flex;
     align-items: center;
@@ -49,12 +51,21 @@ a {
   .logo {
     margin-right: auto;
   }
+  .menu--buttom {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
   .nav__link {
     display: block;
     padding: 1.25rem;
+    padding-top: calc(1.25rem + 2px);
+    padding-bottom: calc(1.25rem - 1px);
 
     font-size: 1rem;
-    line-height: 20px;
+    line-height: calc(1.25rem - 1px);
+    font-weight: 600;
 
     transition: filter 0.2s ease-out;
 
@@ -69,7 +80,7 @@ a {
 .navbar .nav__link--active::after {
   content: "";
   display: block;
-  margin-top: 1rem;
+  margin-top: calc(1rem - 2px);
   margin-inline: auto;
   width: 2rem;
   height: 5px;
@@ -80,9 +91,75 @@ a {
 
 .hero {
   width: 100%;
-  margin: 7rem auto 0;
+  padding-top: 7rem;
+  margin-inline: auto;
 }
-
-@media (max: 912px) {
+@media (max-width: 912px) {
   // Limite para a navbar
+  .page-wrap:has(.menu--active) {
+    user-select: none;
+  }
+  .wrap:has(.menu--active) .menu {
+    display: block;
+    width: 100%;
+    grid-area: menu;
+  }
+  .logo {
+    width: 100%;
+    grid-area: logo;
+
+    .nav__link {
+      width: max-content;
+    }
+  }
+  .navbar {
+    position: fixed;
+    align-items: flex-start;
+
+    &:has(.menu--active) {
+      height: 100%;
+    }
+
+    .wrap {
+      display: grid;
+      grid-template-columns: 1fr 60px;
+      grid-template-areas:
+        "logo buttom"
+        "menu menu";
+      place-content: space-between;
+    }
+    .menu--none {
+      display: none !important;
+    }
+    .nav__item:has(.nav__link--active) .nav__link {
+      position: relative;
+    }
+    .nav__link--active {
+      padding-right: 0;
+      padding-bottom: calc(1.25rem - 1px) !important;
+    }
+    .nav__link--active::after {
+      content: "";
+      position: absolute;
+      margin-top: -30px;
+      margin-left: auto;
+      right: 0;
+      margin-inline: 0;
+      width: 5px;
+      height: 2.5rem;
+
+      background-color: #279af1;
+      border-radius: 3px 0 0 3px;
+    }
+  }
+  .navbar .menu--buttom {
+    display: flex;
+    grid-area: buttom;
+    justify-content: center;
+    align-items: center;
+    max-width: 3.75rem;
+    max-height: 3.75rem;
+    padding: 1.25rem;
+    cursor: pointer;
+  }
 }

@@ -2,27 +2,87 @@
   <nav class="navbar">
     <div class="wrap">
       <span class="logo">
-        <a href="#" class="nav__link">Leonardo Lima Coelho</a>
+        <a href="/" (click)="handleCloseMenu($event)" class="nav__link"
+          >Leonardo Lima Coelho</a
+        >
       </span>
-      <div class="btn btn-text">
+      <div class="menu--buttom" (click)="toggleMenu()">
         <fa-icon [icon]="faBars" size="lg"></fa-icon>
       </div>
-      <span class="nav__item">
-        <a href="#" class="nav__link nav__link--active">Início</a>
-      </span>
-      <span class="nav__item">
-        <a href="#about" class="nav__link">Sobre</a>
-      </span>
-      <span class="nav__item">
-        <a href="#skills" class="nav__link">Habilidades</a>
-      </span>
-      <span class="nav__item">
-        <a href="#" class="nav__link">Experiência</a>
-      </span>
-      <span class="nav__item">
-        <a href="#" class="nav__link">Projetos</a>
-      </span>
-      <span class="nav__item"><a href="#" class="nav__link">Contato</a></span>
+      <div
+        [ngClass]="{
+          menu: true,
+          'menu--none': !menuActive,
+          'menu--active': menuActive
+        }"
+      >
+        <span class="nav__item">
+          <a
+            href="/"
+            (click)="handleCloseMenu($event)"
+            [ngClass]="{
+              nav__link: true,
+              'nav__link--active': linkActive === ''
+            }"
+            >Início</a
+          >
+        </span>
+        <span class="nav__item">
+          <a
+            href="/#about"
+            (click)="handleCloseMenu($event)"
+            [ngClass]="{
+              nav__link: true,
+              'nav__link--active': linkActive === '#about'
+            }"
+            >Sobre</a
+          >
+        </span>
+        <span class="nav__item">
+          <a
+            href="#skills"
+            (click)="handleCloseMenu($event)"
+            [ngClass]="{
+              nav__link: true,
+              'nav__link--active': linkActive === '#skills'
+            }"
+            >Habilidades</a
+          >
+        </span>
+        <span class="nav__item">
+          <a
+            href="#experiences"
+            (click)="handleCloseMenu($event)"
+            [ngClass]="{
+              nav__link: true,
+              'nav__link--active': linkActive === '#experiences'
+            }"
+            >Experiência</a
+          >
+        </span>
+        <span class="nav__item">
+          <a
+            href="#projects"
+            (click)="handleCloseMenu($event)"
+            [ngClass]="{
+              nav__link: true,
+              'nav__link--active': linkActive === '#projects'
+            }"
+            >Projetos</a
+          >
+        </span>
+        <span class="nav__item"
+          ><a
+            href="#contact"
+            (click)="handleCloseMenu($event)"
+            [ngClass]="{
+              nav__link: true,
+              'nav__link--active': linkActive === '#contact'
+            }"
+            >Contato</a
+          ></span
+        >
+      </div>
     </div>
   </nav>
   <header class="header">
@@ -255,6 +315,9 @@
           src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_22-min_hntnyp.webp"
         />
       </div>
+    </section>
+    <section id="experiences" class="grid">
+      <h2 class="section-title">Experiências</h2>
     </section>
     <section id="projects" class="grid">
       <h2 class="section-title">Projetos</h2>
