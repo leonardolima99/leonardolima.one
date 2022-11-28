@@ -1,26 +1,72 @@
-.page-wrap {
-  background: linear-gradient(152.56deg, #0a0a0a 0%, #292929 100%);
+$translateY-social-media: translateY(calc(50vh - (32px + 12px) * 2));
+
+.header {
 }
-.header,
-section.grid {
-  min-height: 100vh;
-}
-section.grid,
 .footer {
   max-width: 75rem;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
+  min-height: 5rem;
+  margin-inline: auto;
 }
 section#contact {
-  min-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
 }
-section.grid,
-.hero {
-  max-width: 65rem;
+.hero,
+.section {
+  max-width: 69rem;
 }
-img {
-  max-width: 100%;
+.section {
+  min-height: 100vh;
+  padding: 6rem 2rem 2rem;
+  margin-inline: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(32rem, 100%), 1fr));
+  place-items: flex-start center;
+  gap: 1rem;
+
+  &.grid--primary {
+    margin-top: 3rem;
+    place-items: center flex-end;
+  }
+  &.grid--secondary {
+    place-items: center flex-start;
+  }
+  &.grid--icons {
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  &.grid--space-b {
+    justify-content: space-between;
+  }
+}
+h2.section-title {
+  justify-self: normal;
+}
+img.hero-illustration {
+  max-width: 470px;
+  max-height: 388px;
+  width: 100%;
+  height: auto;
+}
+img.photo {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+}
+img.email-illustration {
+  max-width: 462px;
+  max-height: 376px;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+img.tech-image {
+  width: 80px;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -31,14 +77,16 @@ a {
   align-items: center;
 
   width: 100%;
-  background: #0a0a0a80;
   backdrop-filter: blur(16px);
-  box-shadow: 0 2px 4px 2px #1d1d1d6a;
+  background: #0a0a0a80;
+  box-shadow: 0 2px 4px 2px #1d1d1d45;
 
   position: sticky;
   top: 0;
 
   user-select: none;
+  transition: padding-top 0.4s ease-out;
+  animation-delay: 0.2s;
 
   .wrap {
     display: flex;
@@ -59,12 +107,12 @@ a {
   }
   .nav__link {
     display: block;
-    padding: 1.25rem;
-    padding-top: calc(1.25rem + 2px);
-    padding-bottom: calc(1.25rem - 1px);
+    padding: 1rem;
+    padding-top: calc(1.25rem /*  + 2px */);
+    padding-bottom: calc(1.25rem /*  - 1px */);
 
     font-size: 1rem;
-    line-height: calc(1.25rem - 1px);
+    line-height: calc(1.25rem /*  - 1px */);
     font-weight: 600;
 
     transition: filter 0.2s ease-out;
@@ -88,14 +136,82 @@ a {
   background-color: #279af1;
   border-radius: 3px 3px 0 0;
 }
-
 .hero {
   width: 100%;
-  padding-top: 7rem;
+  height: 100%;
+  padding: 2rem 2rem 0;
   margin-inline: auto;
+
+  p.subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  p.title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 39px;
+    margin-bottom: 1rem;
+  }
+  p.description {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+}
+span.highlight {
+  background-image: linear-gradient(90deg, #00a2e9, #7b61ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.btn {
+  padding: 1.2rem 2rem 1.05rem;
+
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: #333;
+
+  border-radius: 2rem;
+  border: 0;
+
+  cursor: pointer;
+
+  &.btn-primary {
+    background-image: linear-gradient(97deg, #00a2e9, #002176);
+    color: #f5f5f5;
+  }
+}
+.social-media {
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  transform: $translateY-social-media;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 1200px) {
+  .social-media {
+    position: initial;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: auto;
+  }
 }
 @media (max-width: 912px) {
   // Limite para a navbar
+  .grid--primary {
+    margin-top: 1rem !important;
+  }
+  img.hero-illustration {
+    display: none;
+  }
+  img.email-illustration {
+    display: none;
+  }
   .page-wrap:has(.menu--active) {
     user-select: none;
   }
@@ -161,5 +277,8 @@ a {
     max-height: 3.75rem;
     padding: 1.25rem;
     cursor: pointer;
+  }
+  .hero {
+    padding-top: 7rem;
   }
 }
