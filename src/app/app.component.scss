@@ -1,7 +1,5 @@
 $translateY-social-media: translateY(calc(50vh - (32px + 12px) * 2));
 
-.header {
-}
 .footer {
   max-width: 75rem;
   min-height: 5rem;
@@ -16,34 +14,57 @@ section#contact {
   max-width: 69rem;
 }
 .section {
-  min-height: 100vh;
   padding: 6rem 2rem 2rem;
   margin-inline: auto;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(32rem, 100%), 1fr));
+.flex {
+  display: flex;
   place-items: flex-start center;
+  flex-wrap: wrap;
   gap: 1rem;
 
-  &.grid--primary {
+  &.flex--primary {
     margin-top: 3rem;
     place-items: center flex-end;
   }
-  &.grid--secondary {
-    place-items: center flex-start;
+  &.flex--secondary {
   }
-  &.grid--icons {
-    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  &.flex--icons {
     gap: 0.5rem;
     margin-top: 2rem;
   }
-  &.grid--space-b {
+  &.flex--space-b {
     justify-content: space-between;
   }
+
+  .flex__item:has(img) {
+    min-width: fit-content;
+  }
+}
+.block-text {
+  max-width: 32rem;
+}
+.flex__item.image {
+  margin-left: auto;
+}
+.flex__item.about-me {
+  max-width: 39rem;
 }
 h2.section-title {
   justify-self: normal;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+}
+p.paragraph {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 1.25rem;
+}
+.skill-list {
+  max-width: 32rem;
 }
 img.hero-illustration {
   max-width: 470px;
@@ -190,6 +211,7 @@ span.highlight {
   transform: $translateY-social-media;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 @media (max-width: 1200px) {

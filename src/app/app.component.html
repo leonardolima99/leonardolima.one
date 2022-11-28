@@ -86,8 +86,8 @@
     </div>
   </nav>
   <header class="header">
-    <div class="hero grid grid--primary">
-      <div class="block-text grid-item">
+    <div class="hero flex flex--primary">
+      <div class="block-text flex-item">
         <p class="subtitle">Olá, seja bem-vindo, eu sou</p>
         <p class="title">
           Leonardo Lima Coelho
@@ -100,7 +100,7 @@
         </p>
         <button class="btn btn-primary">Baixar Currículo</button>
       </div>
-      <div class="grid__item">
+      <div class="image flex__item">
         <img
           src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669344281/Imagehero-min_wth6mn.webp"
           alt="Development illustration"
@@ -111,15 +111,15 @@
     <span class="mouse-animation">🖱️</span>
   </header>
   <main class="main">
-    <section id="about" class="section grid grid--secondary">
-      <div class="grid__item">
+    <section id="about" class="section flex flex--secondary">
+      <div class="flex__item">
         <img
           src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669344179/perfil_qwh70b.webp"
           alt="Retrato de Leonardo Lima Coelho"
           class="photo"
         />
       </div>
-      <div class="grid__item">
+      <div class="flex__item about-me">
         <h2 class="section-title">Sobre</h2>
         <p class="paragraph">
           Sou desenvolvedor a alguns anos, venho trabalhando com tecnologias
@@ -148,12 +148,12 @@
         </p>
       </div>
     </section>
-    <section id="skills" class="section grid">
-      <div class="grid__item">
+    <section id="skills" class="section flex">
+      <div class="flex__item skill-list">
         <h2 class="section-title">
           Tecnologias que fazem parte do meu dia a dia
         </h2>
-        <div class="grid grid--icons">
+        <div class="flex flex--icons">
           <img
             class="tech-image"
             width="100px"
@@ -240,11 +240,11 @@
           />
         </div>
       </div>
-      <div class="grid__item">
+      <div class="flex__item skill-list">
         <h2 class="section-title">
           Tecnologias que pretendo integrar ao meu arsenal
         </h2>
-        <div class="grid grid--icons">
+        <div class="flex flex--icons">
           <img
             class="tech-image"
             width="100px"
@@ -325,23 +325,23 @@
         </div>
       </div>
     </section>
-    <section id="experiences" class="section grid">
+    <section id="experiences" class="section flex">
       <h2 class="section-title">Experiências</h2>
     </section>
-    <section id="projects" class="section grid">
+    <section id="projects" class="section flex">
       <h2 class="section-title">Projetos</h2>
     </section>
     <section id="contact" class="section">
       <h2 class="section-title">Entre em contato comigo</h2>
-      <div class="grid grid-secondary">
-        <div class="grid__item">
+      <div class="flex flex-secondary">
+        <div class="flex__item">
           <img
             src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669417900/illustration-email-min_oexzsi.webp"
             alt="Email illustration"
             class="email-illustration"
           />
         </div>
-        <div class="grid__item">
+        <div class="flex__item">
           <form class="form-contact" onSubmit="(e) => e.preventDefault()">
             <div class="form-floating">
               <input type="text" class="text-line" id="name" />
@@ -386,7 +386,7 @@
           src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669419878/mail_e8ylud.webp"
           alt="Email button"
           width="32px"
-          height="32px"
+          height="auto"
         />
       </div>
     </section>
