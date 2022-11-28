@@ -6,11 +6,16 @@
 - [ ] Ao rolar a página, não atualiza o realce na navbar.
 - [ ] Tentar ocupar a tela toda no menu mobile. Quando rola rápido o height não chega ao fundo.
 - [ ] Rolagem para navbar, principalmente para o modo paisagem.
-- [ ] Estilizar .header.
-- [ ] Responsividade para imagens.
-- [ ] Shrink navbar quando rolar **sem javascript** [CSS Tricks](https://css-tricks.com/how-to-create-a-shrinking-header-on-scroll-without-javascript/).
+- [x] Estilizar .header.
+- [x] Estilizar #about.
+- [ ] Estilizar #skills.
+- [ ] Estilizar #contact.
+- [ ] Estilizar .footer.
+- [x] Responsividade para imagens.
+- [x] Shrink navbar quando rolar **sem javascript** [CSS Tricks](https://css-tricks.com/how-to-create-a-shrinking-header-on-scroll-without-javascript/).
 - [ ] Fica péssimo em diversos formatos e tamanhos de tela. Ajustar após finalizado.
 - [ ] Usar modelo do figma de card para skills [Figma](https://www.figma.com/file/GDIBLe6oeAZRHMzE5LJ9HO/Portifolio?node-id=0%3A1&t=CyrYxbeqq0INlVih-1).
+- [ ] Verificar possíveis cores para o gradiente do texto no header.
 
 ## Development server
 
