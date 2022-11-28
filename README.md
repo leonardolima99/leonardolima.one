@@ -16,6 +16,8 @@
 - [ ] Fica péssimo em diversos formatos e tamanhos de tela. Ajustar após finalizado.
 - [ ] Usar modelo do figma de card para skills [Figma](https://www.figma.com/file/GDIBLe6oeAZRHMzE5LJ9HO/Portifolio?node-id=0%3A1&t=CyrYxbeqq0INlVih-1).
 - [ ] Verificar possíveis cores para o gradiente do texto no header.
+- [ ] Dividir em componentes, e usar todos ao máximo o que o Angular oferece.
+- [ ] Voltar angular.json ao padrão [2kb - 4kb].
 
 ## Development server
 
