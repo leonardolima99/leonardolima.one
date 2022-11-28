@@ -11,17 +11,30 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
 html {
+  background: linear-gradient(152.56deg, #0a0a0a 0%, #292929 100%);
+}
+html,
+body,
+.page-wrap {
+  width: 100%;
+  height: auto;
   scroll-behavior: smooth;
 }
 
-$scrollbar-thumb: #a1a1a1;
-$scrollbar-thumb-hover: #8a8a8a;
-$scrollbar-thumb-active: #6a6a6a;
-$scrollbar-track: #d4d4d4;
+p {
+  word-break: break-word;
+}
+
+$scrollbar-thumb: #3c3c3c;
+$scrollbar-thumb-hover: #343434;
+$scrollbar-thumb-active: #303030;
+/* $scrollbar-track: #d4d4d4;
 $scrollbar-track-hover: #c2c2c2;
-$scrollbar-track-active: #b5b5b5;
+$scrollbar-track-active: #b5b5b5; */
+$scrollbar-track: linear-gradient(180deg, #0a0a0a 0%, #292929 100%);
+$scrollbar-track-hover: linear-gradient(180deg, #0a0a0a 0%, #292929 100%);
+$scrollbar-track-active: linear-gradient(180deg, #0a0a0a 0%, #292929 100%);
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -34,6 +47,7 @@ $scrollbar-track-active: #b5b5b5;
 }
 ::-webkit-scrollbar-thumb {
   background: $scrollbar-thumb;
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: $scrollbar-thumb-hover;

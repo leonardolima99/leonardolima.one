@@ -86,12 +86,12 @@
     </div>
   </nav>
   <header class="header">
-    <div class="hero">
-      <div class="block-text">
+    <div class="hero grid grid--primary">
+      <div class="block-text grid-item">
         <p class="subtitle">Olá, seja bem-vindo, eu sou</p>
         <p class="title">
-          Leonardo Lima Coelho Desenvolvedor
-          <span class="highlight">FullStack</span>
+          Leonardo Lima Coelho
+          <span class="highlight">Desenvolvedor FullStack</span>
         </p>
         <p class="description">
           Sou um desenvolvedor fullstack, focado em React (no front-end) e
@@ -100,41 +100,23 @@
         </p>
         <button class="btn btn-primary">Baixar Currículo</button>
       </div>
-      <div class="image">
+      <div class="grid__item">
         <img
           src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669344281/Imagehero-min_wth6mn.webp"
-          alt="Teste"
+          alt="Development illustration"
+          class="hero-illustration"
         />
       </div>
     </div>
     <span class="mouse-animation">🖱️</span>
-    <div class="social-media">
-      <img
-        src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669419878/whatsapp_cf6tbg.webp"
-        alt="Whatsapp button"
-      />
-      <img
-        src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669419878/mail_e8ylud.webp"
-        alt="Email button"
-      />
-      <img
-        src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669419878/linkedin_galrsr.webp"
-        alt="Linkedin button"
-      />
-      <img
-        src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669419878/github_iwxzlx.webp"
-        alt="Github button"
-      />
-    </div>
   </header>
   <main class="main">
-    <section id="about" class="grid">
+    <section id="about" class="section grid grid--secondary">
       <div class="grid__item">
         <img
           src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669344179/perfil_qwh70b.webp"
-          width="400px"
-          height="400px"
           alt="Retrato de Leonardo Lima Coelho"
+          class="photo"
         />
       </div>
       <div class="grid__item">
@@ -166,190 +148,246 @@
         </p>
       </div>
     </section>
-    <section id="skills" class="grid">
+    <section id="skills" class="section grid">
       <div class="grid__item">
         <h2 class="section-title">
           Tecnologias que fazem parte do meu dia a dia
         </h2>
-        <img
-          width="100px"
-          height="100px"
-          alt="HTML5 Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_6-min_hnqvru.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="CSS3 Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_7-min_leakmn.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="TypeScript Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_3-min_fxcoym.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="JavaScript Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_2-min_v95qwg.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Node.js Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_4-min_vlsmb7.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="React Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_5-min_r7rzd5.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Figma Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_34-min_anr2of.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Docker Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_8-min_elevef.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Postgres Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_15-min_dny3uu.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Git Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_1-min_f3mvan.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Tux Linux Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_12-min_dohz7c.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Sass Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_17-min_rhlkya.webp"
-        />
+        <div class="grid grid--icons">
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="HTML5 Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_6-min_hnqvru.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="CSS3 Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_7-min_leakmn.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="TypeScript Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_3-min_fxcoym.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="JavaScript Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_2-min_v95qwg.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Node.js Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_4-min_vlsmb7.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="React Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_5-min_r7rzd5.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Figma Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_34-min_anr2of.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Docker Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_8-min_elevef.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Postgres Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_15-min_dny3uu.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Git Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_1-min_f3mvan.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Tux Linux Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_12-min_dohz7c.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Sass Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_17-min_rhlkya.webp"
+          />
+        </div>
       </div>
       <div class="grid__item">
         <h2 class="section-title">
           Tecnologias que pretendo integrar ao meu arsenal
         </h2>
-        <img
-          width="100px"
-          height="100px"
-          alt="Redux Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_16-min_fy0xvb.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Jest Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_11-min_nxbhdb.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Nest.js Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_13-min_sjszxh.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Terraform Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_20-min_eoyetf.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Vue.js Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_21-min_izakd4.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="GraphQL Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_10-min_qzjmiv.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Angular Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_9-min_wpahuo.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Tailwind Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_19-min_vi4hoy.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Storybook Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_18-min_mpb6ph.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Next.js Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/next-min_ecgvcg.webp"
-        />
-        <img
-          width="100px"
-          height="100px"
-          alt="Webpack Icon"
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_22-min_hntnyp.webp"
-        />
+        <div class="grid grid--icons">
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Redux Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_16-min_fy0xvb.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Jest Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_11-min_nxbhdb.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Nest.js Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_13-min_sjszxh.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Terraform Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_20-min_eoyetf.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Vue.js Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_21-min_izakd4.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="GraphQL Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_10-min_qzjmiv.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Angular Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_9-min_wpahuo.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Tailwind Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_19-min_vi4hoy.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Storybook Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/image_18-min_mpb6ph.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Next.js Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349852/techs%20icons/next-min_ecgvcg.webp"
+          />
+          <img
+            class="tech-image"
+            width="100px"
+            height="100px"
+            alt="Webpack Icon"
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669349853/techs%20icons/image_22-min_hntnyp.webp"
+          />
+        </div>
       </div>
     </section>
-    <section id="experiences" class="grid">
+    <section id="experiences" class="section grid">
       <h2 class="section-title">Experiências</h2>
     </section>
-    <section id="projects" class="grid">
+    <section id="projects" class="section grid">
       <h2 class="section-title">Projetos</h2>
     </section>
-    <section id="contact" class="grid">
+    <section id="contact" class="section">
       <h2 class="section-title">Entre em contato comigo</h2>
-      <div class="grid__item">
-        <img
-          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669417900/illustration-email-min_oexzsi.webp"
-          alt="Email illustration"
-        />
+      <div class="grid grid-secondary">
+        <div class="grid__item">
+          <img
+            src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669417900/illustration-email-min_oexzsi.webp"
+            alt="Email illustration"
+            class="email-illustration"
+          />
+        </div>
+        <div class="grid__item">
+          <form class="form-contact" onSubmit="(e) => e.preventDefault()">
+            <div class="form-floating">
+              <input type="text" class="text-line" id="name" />
+              <label for="name" class="label-input">Seu nome</label>
+            </div>
+            <div class="form-floating">
+              <input type="text" class="text-line" id="email" />
+              <label for="email" class="label-input">E-mail</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="text-line" id="message"></textarea>
+              <label for="message" class="label-input"
+                >Escreva aqui sua mensagem</label
+              >
+            </div>
+            <button class="btn btn-primary" type="button">
+              Me envie um E-mail
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="grid__item">
-        <form class="form-contact" onSubmit="(e) => e.preventDefault()">
-          <div class="form-floating">
-            <input type="text" class="text-line" id="name" />
-            <label for="name" class="label-input">Seu nome</label>
-          </div>
-          <div class="form-floating">
-            <input type="text" class="text-line" id="email" />
-            <label for="email" class="label-input">E-mail</label>
-          </div>
-          <div class="form-floating">
-            <textarea class="text-line" id="message"></textarea>
-            <label for="message" class="label-input"
-              >Escreva aqui sua mensagem</label
-            >
-          </div>
-          <button class="btn btn-primary" type="button">
-            Me envie um E-mail
-          </button>
-        </form>
+      <div class="social-media">
+        <img
+          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669419878/whatsapp_cf6tbg.webp"
+          alt="Whatsapp button"
+          width="32px"
+          height="32px"
+        />
+        <img
+          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669419878/linkedin_galrsr.webp"
+          alt="Linkedin button"
+          width="32px"
+          height="32px"
+        />
+        <img
+          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669419878/github_iwxzlx.webp"
+          alt="Github button"
+          width="32px"
+          height="32px"
+        />
+        <img
+          src="https://res.cloudinary.com/dlz7aaj3q/image/upload/v1669419878/mail_e8ylud.webp"
+          alt="Email button"
+          width="32px"
+          height="32px"
+        />
       </div>
     </section>
   </main>

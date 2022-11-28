@@ -1,5 +1,15 @@
 # Leonardolima.one
 
+### Check list
+
+- [ ] Link direto para section#id não funciona.
+- [ ] Ao rolar a página, não atualiza o realce na navbar.
+- [ ] Tentar ocupar a tela toda no menu mobile. Quando rola rápido o height não chega ao fundo.
+- [ ] Rolagem para navbar, principalmente para o modo paisagem.
+- [ ] Estilizar .header.
+- [ ] Responsividade para imagens.
+- [ ] Shrink navbar quando rolar **sem javascript** [CSS Tricks](https://css-tricks.com/how-to-create-a-shrinking-header-on-scroll-without-javascript/).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
 ## Development server
