@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "leonardolima-portfolio",
-    "public": "dist",
+    "public": "dist/leonardolima.one",
     "ignore": [
       ".git",
       ".runtimeconfig.json",
